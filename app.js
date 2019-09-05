@@ -1,0 +1,17 @@
+// Used to store all the requires variables and middlewares.
+var express = require('express');
+var session = require('express-session');
+var mongoose = require('mongoose');
+var routes = require('./routes/index');
+var path = require('path');
+
+var app = express();
+app.set('views', path.join(__dirname, 'views')); 
+app.set('view engine', 'hbs');
+app.use(express.static(path.join(__dirname, 'public')));
+
+
+app.use('/', routes);
+
+
+module.exports = app;

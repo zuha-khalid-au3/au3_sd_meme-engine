@@ -1,1 +1,0 @@
-# group2_meme_engine
