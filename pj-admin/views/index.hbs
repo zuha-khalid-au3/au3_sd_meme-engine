@@ -1,0 +1,66 @@
+<h1>WELCOME ADMIN!!!!</h1>
+<section class="insert">
+    <h3>Insert User Data</h3>
+    <form action="/insert" method="post">
+        <div class="input">
+            <label for="uname">Username</label>
+            <input type="text" id="uname" name="uname">
+        </div>
+        <div class="input">
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email">
+        </div>
+        <div class="input">
+            <label for="pass">Password</label>
+            <input type="text" id="pass" name="pass">
+        </div>
+        <button type="submit">INSERT</button>
+    </form>
+</section>
+<section class="get">
+    <h3>Show Database</h3>
+    <a href="/get-data">Click to Load Users From Database</a>
+    <div>
+        {{# each items }}
+            <article class="data">
+                <div>Username: {{ this.uname }}</div>
+                <div>Email: {{ this.email }}</div>
+                <div>Password: {{ this.pass }}</div>
+                <div>ID: {{ this._id }}</div>
+            </article>
+        {{/each}}
+    </div>
+</section>
+<section class="update">
+    <h3>Update Database</h3>
+    <form action="/update" method="post">
+        <div class="input">
+            <label for="id">ID</label>
+            <input type="text" id="id" name="id">
+        </div>
+        <div class="input">
+            <label for="uname">Username</label>
+            <input type="text" id="uname" name="uname">
+        </div>
+        <div class="input">
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email">
+        </div>
+        <div class="input">
+            <label for="pass">Password</label>
+            <input type="text" id="pass" name="pass">
+        </div>
+        <button type="submit">UPDATE</button>
+    </form>
+</section>
+</section>
+<section class="delete">
+    <h3>Delete User From Database</h3>
+    <form action="/delete" method="post">
+        <div class="input">
+            <label for="id">ID</label>
+            <input type="text" id="id" name="id">
+        </div>
+        <button type="submit">DELETE</button>
+    </form>
+</section>
