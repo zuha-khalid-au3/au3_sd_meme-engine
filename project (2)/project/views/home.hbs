@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{style}}">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <title>The Meme Store</title>
+</head>
+
+<body>
+     
+    <section id="navbar">
+        <nav class="navbar navbar-expand-lg navbar-light">
+
+
+            <a class="navbar-brand" href="#"><img src="./images/df807120-7bab-4b25-8bf3-588962468cb0_200x200.png"
+                    id="logo" /></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">HOME <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">XPLORE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">ABOUT-US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">CONTACT-US</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                        
+                         <button type="button" class="btn btn-outline-success my-2 my-sm-0" style="margin: 10px; color: #fff;" data-toggle="modal" data-target="#exampleModalCenter">
+                          Upload
+                        </button>
+                        {{!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="margin: 10px; color: #fff;">Upload Image</button> --}}
+                        <button type="button" class="btn btn-outline-success my-2 my-sm-0" style="margin: 10px; color: #fff;" data-toggle="modal" data-target="#exampleModalCenter1">
+                          Login/SignUp
+                         </button>
+                        
+                        
+
+                         
+                    {{!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="margin: 10px; color: #fff;">Login / Sign-up</button> --}}
+                </form>
+                
+            </div>
+        </nav>
+      
+    </section> <br>
+
+    <section id="main-body">
+
+        <div class="row" style="margin: 10px">
+            <div class="col-2">
+
+                <h2> Categories </h2>
+                <br>
+
+                    <ul style="list-style-type:none;">
+                            <li style="margin: 15px" id="Fun"> <button class="btn btn-danger"> #Funny </button>  </li>
+                            <li style="margin: 15px" id="Hum">  <button class="btn btn-danger"> #Humor  </button> </li>
+                            <li style="margin: 15px" id="Sar">  <button class="btn btn-danger"> #Sarcasm </button> </li>
+                            <li style="margin: 15px" id="Awe">  <button class="btn btn-danger">  #Awesome  </button> </li>
+                            <li style="margin: 15px" id="Sch">  <button class="btn btn-danger">  #School  </button> </li>
+                          </ul>  
+                
+
+            </div>
+
+            <div class="vl"></div>
+
+            <div class="col-9">
+                <div class='container'>
+                    <div id="crd" class="row card-columns" style="left-margin: 10px">
+                        {{!-- <div class="col-4"> --}}
+                             {{!-- <div id="crd"style="margin: 20px">
+ --}}
+                        
+                        </div>
+               
+                    </div>
+                    </div>
+
+
+
+
+            </div>
+                 
+            </div>
+{{!-- 
+            <div class="vl"></div>
+
+            <div class="col" id="right">
+
+                <h3> Share On </h3> <br>
+
+                <button class="btn btn-primary"> <i class="fa fa-facebook-square" aria-hidden="true" style="margin: 10px ;"></i> </button>
+                <button class="btn btn-primary"> <i class="fa fa-google" aria-hidden="true" style="margin: 10px ;"></i>  </button> 
+                <button class="btn btn-primary">  <i class="fa fa-instagram" aria-hidden="true" style="margin: 10px ;"></i> </button>
+                <button class="btn btn-primary">  <i class="fa fa-twitter" aria-hidden="true" style="margin: 10px ;"></i> </button>
+
+
+
+            </div>
+        </div> --}}
+
+
+    </section>
+   
+    <!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle">Great!Want to upload something.</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+         <form  action = "/memesUpload" method = "post"  enctype = "multipart/form-data" >
+         <input  id = "input"   class="btn btn-outline-success my-2 my-sm-0"  type = "file"   name = "memes">
+          <button  id = "button" class="btn btn-outline-success my-2 my-sm-0"  type = "submit"  >Upload</button>
+
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle">Great!Want to Login/SignUP .</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+           <button type="button" class="btn btn-outline-success my-2 my-sm-0" style="margin: 10px; color: #fff;" data-toggle="modal" data-target="#exampleModalCenter2">
+                          Signup
+                         </button>
+           <label>Login</label>
+           <form>
+           <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                 </div>
+               <div class="form-group">
+               <label for="exampleInputPassword1">Password</label>
+             <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+              </div>
+                <div class="form-group form-check">
+                 <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+               </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+         </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+  <!-- Modal -->
+<div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle">Great!Want to Signup .</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+           <form>
+
+              <div class="form-group">
+              <label for="exampleInput">YourName</label>
+              <input type="text" class="form-control" id="exampleInput" name="yourName" aria-describedby="emailHelp" placeholder="Enter Your Name">
+               
+                 </div>
+            <div class="form-group">
+              <label for="exampleInput">UserName</label>
+              <input type="text" class="form-control" id="exampleInput"  name="UserName" aria-describedby="emailHelp" placeholder="Enter Your Name">
+               
+                 </div>
+
+           <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                 </div>
+               <div class="form-group">
+               <label for="exampleInputPassword1">Password</label>
+             <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+              </div>
+                <div class="form-group form-check">
+                 <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+               </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+         </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+</body>
+
+</html>
+
+
+
