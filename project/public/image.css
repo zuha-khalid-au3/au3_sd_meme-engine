@@ -1,0 +1,66 @@
+body {
+    height: 625px;
+    background: linear-gradient(to right,  red, #5f1782);
+}
+
+
+
+#input{
+    background-image: linear-gradient(to right, #5f1782, red);
+    border : 1px solid red;
+    color : white;
+    font-size: 18px;
+    width : 100%;
+    position: relative;
+    top:30px;
+    padding: 5px; 
+    left : 5px;
+    right:5px;
+    /* position : absolute;
+     top : 200px;
+     left: 80px;
+    padding: 15px; */
+   }
+   #button{
+    width:100%;
+    font-size: 18px;
+    position: relative;
+     top: 60px;
+     left: 5px;
+     right: 5px;
+
+    /* height : 35px; */
+    padding: 5px;
+    /* background-color:linear-gradient(to right,  red, #5f1782);  */
+   background-image: linear-gradient(to right, #5f1782, red);
+    border : 1px solid red;
+    color : white;
+   
+}
+
+
+/* 
+#button{
+    background-color: ;
+    color : white;
+    font-size: 18px;
+    width : 30%; 
+    position : absolute;
+     top : 200px;
+     right: 80px;
+    padding: 15px;
+    
+
+    
+} */
+
+ .container{
+    background-color: white;
+    height: 200px;
+    width : 300px;
+     position:absolute;
+    top:200px;
+    right:4px;
+    left:40px;
+    bottom:200px; 
+} 

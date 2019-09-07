@@ -1,0 +1,162 @@
+* {
+    margin:  0;
+    padding: 0;
+
+}
+
+body {
+    font-family: sans-serif;
+}
+
+#navbar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.navbar{
+    background-image: linear-gradient(to right, red, #5f1782);
+    padding: 0;
+    
+}
+
+#logo {
+    height: 40px ;
+    padding-left: 20px;
+}
+
+.navbar-nav li 
+{
+    padding: 0 10px;
+}
+
+.navbar-nav li a 
+{
+    color: #fff !important;
+    font-weight: 600;
+    float: right;
+    text-align: left;
+    
+}
+
+.fa-bars {
+    color: #fff;
+    font-size: 30px !important;
+}
+
+.navbar-toggler {
+    outline: none !important;
+
+}
+
+
+.vl {
+    border-left: 3px solid red;
+    height: auto; 
+}
+
+.col-6 {
+    margin: 10px;
+    align-content: center;
+}
+
+#right {
+    margin: 20px;
+}
+
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 5px; /* Location of the box */
+  
+    left: 730px;
+    top: 0;
+    width: 60%; /* Full width */
+    height: 60%; /* Full height */
+    /* overflow: auto; Enable scroll if needed */
+    
+  }
+  
+  /* Modal Content */
+  .modal-content {
+  
+    margin: auto;
+    padding: 10px;
+    border: 1px solid white;
+    width: 50%;
+  }
+  
+
+.container{
+    background-color: white;
+    height: 200px;
+    width : 300px;
+    /* position:absolute;
+    top:200px;
+    right:4px;
+    left:40px;
+    bottom:200px; */
+}
+
+body{
+    height: 625px;
+    background: linear-gradient(to right,  red, #5f1782);
+}
+
+#signin{
+    position: relative;
+    top: 10px;
+    left:70px;
+  
+}
+#button{
+    width:100%;
+    position: relative;
+    top: 20px;
+    height : 35px;
+    /* background-color:linear-gradient(to right,  red, #5f1782);  */
+   background-image: linear-gradient(to right, #5f1782, red);
+    border : 1px solid red;
+    color : white;
+   
+}
+
+#signup{
+    
+    position: relative;
+    top: 30px;
+    left:70px;
+}
+#Sign{
+    width:100%;
+    position: relative;
+    top: 40px;
+    /* background-color: #89ABE3FF; */
+    background-image: linear-gradient(to right, #5f1782, red);
+    border : 1px solid red;
+    color : white;
+   
+}
+
+
+
+
+ .close {
+    color:#5f1782 ;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: red;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  
+ 

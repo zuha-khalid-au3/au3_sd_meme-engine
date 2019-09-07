@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{style}}">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <title>The Meme Store</title>
+</head>
+
+<body>
+    <section id="navbar">
+        <nav class="navbar navbar-expand-lg navbar-light">
+
+
+            <a class="navbar-brand" href="#"><img src="./images/df807120-7bab-4b25-8bf3-588962468cb0_200x200.png"
+                    id="logo" /></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">XPLORE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">ABOUT-US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">CONTACT-US</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    
+                     <!--   <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="margin: 10px; color: #fff;"   onclick="document.location.href='/images';">Upload Image</button> -->
+ <input type='button' button class="btn btn-outline-success my-2 my-sm-0"  value='Upload Image'  id = "images" style="margin: 10px; color: #fff;"   onclick="document.location.href='/images';" class="btn" />  
+<!-- <button  class="btn btn-outline-success my-2 my-sm-0"    id ="images" style="margin: 10px; color: #fff;" > Upload Image</button> -->  
+                              
+
+<button class="btn btn-outline-success my-2 my-sm-0" id="popup"  type="button" style="margin: 10px; color: #fff;">Login / Sign-up</button>
+                
+                        <div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p >
+         <div class = "container"> 
+             
+         <div   id = "signin"><u>Already a user</u></div>
+       <input  type="button"  id = "button"  value="Login" class="btn btn-outline-success my-2 my-sm-0"   onclick="document.location.href='/';"/>
+       <div    id = "signup"><u>Not registered</u></div>
+       <input type='button'  value='Sign up'  id ="Sign"  class="btn"  onclick="document.location.href='/users/add';"/>
+         </div>    
+    </p> 
+    
+  </div>
+
+</div>
+
+
+                     
+                </form>  
+            </div>
+        </nav>
+
+    </section> <br>
+
+    <section id="main-body">
+
+        <div class="row" style="margin: 10px">
+            <div class="col">
+
+                <h2> Categories </h2>
+                <br>
+
+                    <ul style="list-style-type:none;">
+                            <li style="margin: 15px"> <button class="btn btn-danger"> #Trending </button>  </li>
+                            <li style="margin: 15px">  <button class="btn btn-danger"> #Funny  </button> </li>
+                            <li style="margin: 15px">  <button class="btn btn-danger"> #Technology </button> </li>
+                            <li style="margin: 15px">  <button class="btn btn-danger">  #Cricket  </button> </li>
+                          </ul>  
+                
+
+            </div>
+
+            <div class="vl"></div>
+
+            <div class="col-6" style="margin: 20px;">
+                <img src="./images/dora-needs-your-help_o_2675667.jpg">
+                <br> <br>  <br> 
+
+                <img src="./images/dora-needs-your-help_o_2675667.jpg">
+                <br> <br>  <br> 
+
+                <img src="./images/dora-needs-your-help_o_2675667.jpg">
+                <br> <br>  <br> 
+
+                <img src="./images/dora-needs-your-help_o_2675667.jpg">
+                <br> <br>  <br> 
+
+            </div>
+
+            <div class="vl"></div>
+
+            <div class="col" id="right">
+
+                <h3> Share On </h3> <br>
+
+                <button class="btn btn-primary"> <i class="fa fa-facebook-square" aria-hidden="true" style="margin: 10px ;"></i> </button>
+                <button class="btn btn-primary"> <i class="fa fa-google" aria-hidden="true" style="margin: 10px ;"></i>  </button> 
+                <button class="btn btn-primary">  <i class="fa fa-instagram" aria-hidden="true" style="margin: 10px ;"></i> </button>
+                <button class="btn btn-primary">  <i class="fa fa-twitter" aria-hidden="true" style="margin: 10px ;"></i> </button>
+
+
+
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+</body>
+
+</html>
+

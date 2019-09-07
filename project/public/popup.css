@@ -1,0 +1,73 @@
+.container{
+    background-color: white;
+    height: 200px;
+    width : 300px;
+    /* position:absolute;
+    top:200px;
+    right:4px;
+    left:40px;
+    bottom:200px; */
+}
+
+body{
+    height: 625px;
+    background: linear-gradient(to right,  red, #5f1782);
+}
+
+#signin{
+    position: relative;
+    top: 10px;
+    left:70px;
+  
+}
+#button{
+    width:100%;
+    position: relative;
+    top: 20px;
+    height : 35px;
+    /* background-color:linear-gradient(to right,  red, #5f1782);  */
+   background-image: linear-gradient(to right, #5f1782, red);
+    border : 1px solid red;
+    color : white;
+   
+}
+
+#signup{
+    
+    position: relative;
+    top: 30px;
+    left:70px;
+}
+#Sign{
+    width:100%;
+    position: relative;
+    top: 40px;
+    /* background-color: #89ABE3FF; */
+    background-image: linear-gradient(to right, #5f1782, red);
+    border : 1px solid red;
+    color : white;
+   
+}
+
+
+/*  #33ccff 0%, #ff99cc 100% */
+
+/* this can be removed */
+
+ .close {
+    color:#5f1782 ;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: red;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /*#box{
+    width:130px;
+  } */

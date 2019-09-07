@@ -1,0 +1,40 @@
+#body{
+    /* background-color: #D3D3D3; */
+    height: 625px;
+    background: linear-gradient(to right,  red, #5f1782);
+}
+
+#button{
+    background-image: linear-gradient(to right, #5f1782, red);
+    border : 1px solid red;
+    color: white;
+    width : 100%;
+    position : relative;
+    top: 50px;
+}
+
+#email{
+    border : 1px  solid  red;
+    width : 100%;
+    position : relative;
+    top: 10px;
+   }
+
+#password{
+    border : 1px solid red;
+    width : 100%;
+    position : relative;
+    top: 10px;
+ }
+ #btnSubmit{
+    background-image: linear-gradient(to right, #5f1782, red);
+    border : 1px solid red;
+    color: white;
+    border-radius: 5px;
+   
+    width : 100%;
+    position : relative;
+    top: 70px;
+    font-size: 16px;
+    height: 35px;
+  }
