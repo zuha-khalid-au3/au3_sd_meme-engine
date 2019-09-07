@@ -35,11 +35,28 @@
 </section> <br>
     <br>
     <br>
-      <h1 style="text-align: center;">This is funny image</h1>
-    <img class="imgPost" src="https://i.imgur.com/5ZQHSsY.png"/>
+    <div>
+      <h1 style="text-align: center;color:white; background-image: linear-gradient(to right, red, #5f1782); ">This is funny image</h1>
+    <img  class="imgPost" src="https://www.todaysparent.com/wp-content/uploads/2017/06/when-your-kid-becomes-a-meme-1024x576-1497986561.jpg"/>
     <br>
-    <div class="imgbutton">
-        <button  id="upvote" type="button">upvote</button>
     </div>
+    <form class="form-inline" >
+    <div class="imgbutton container " >
+         <button  id="previous" type="button">Last</button>
+        <button  id="upvote" type="button">Upvote</button>
+         <button  id="next" type="button"><span>Next </span></button>
+        <br>
+         {{#each array}}
+         <div><p>Username:{{this.username}} Comment: {{this.comment}}</p></div>
+          {{/each}}
+        
+        <input type="text" class="form-control" id="username" name="username" placeholder="enter username"/>
+        <input type="text" class="form-control" id="newcomment" name="comment" placeholder="Type your comment"/>
+        <button id="comment" type="button">Comment</button><br><br>
+        
+    </div>
+    </form>
+    <br>
+    <h1 style="text-align: center;background-color:red;color:white"> here will be footer</h1>
     <br>
     </br>

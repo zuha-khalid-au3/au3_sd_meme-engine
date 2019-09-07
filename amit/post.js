@@ -23,7 +23,8 @@ router.get('/post', function (req, res) {
       throw err;
     res.render("post",{
       style:"post.css",
-      script:"script_post.js"
+      script:"script_post.js",
+      array:result
     })
     // res.json(result);
   })
@@ -33,7 +34,7 @@ router.get('/post', function (req, res) {
 
 router.post('/post', function (req, res) {
   // res.json('This is posted image route');
-  db.collection('num').insertOne({upvote:req.body.upvote,downvote:req.body.downvote},function(err,result){
+  db.collection('num').insertOne({upvote:req.body.upvote,username:req.body.username,comment:req.body.comment},function(err,result){
     if(err)
       throw err;
     res.json(result);
@@ -41,9 +42,20 @@ router.post('/post', function (req, res) {
     
 });
 
+router.post('/post', function (req, res) {
+  // res.json('This is posted image route');
+  db.collection('num').insertOne({username:req.body.username,comment:req.body.comment},function(err,result){
+    if(err)
+      throw err;
+    res.json(result);
+  })
+    
+});
+
+
 router.put('/post', function (req, res) {
   // res.json('This is posted image route');
-  db.collection('num').updateOne({_id:require('mongodb').ObjectID(req.body.id)},{$set: {upvote:req.body.upvote,downvote:req.body.downvote}},function(err,result){
+  db.collection('num').updateOne({_id:require('mongodb').ObjectID(req.body.id)},{$set: {upvote:req.body.upvote,username:req.body.username,comment:req.body.comment}},function(err,result){
     if(err)
       throw err;
     res.json(result);
