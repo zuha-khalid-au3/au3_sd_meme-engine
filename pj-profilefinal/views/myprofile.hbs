@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+        <link   rel="stylesheet"  href="myprofile.css">
+		{{!-- <script>
+$(document).ready(function(){
+    $("#signout").click(function(){
+          window.location.href="/logout";   
+        });
+    });
+});
+</script> --}}
+
+
+
+    <title>The Meme Store</title>
+</head>
+
+<body>
+   <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+<div class="container">
+    <div class="row profile">
+		<div class="col-md-3">
+			<div class="profile-sidebar">
+				<!-- SIDEBAR USERPIC -->
+				<div class="profile-userpic">
+					<img src="" class="img-responsive" alt="">
+				</div>
+				<!-- END SIDEBAR USERPIC -->
+				<!-- SIDEBAR USER TITLE -->
+				<div class="profile-usertitle">
+					<div class="profile-usertitle-name">
+						Welcome {{data.username}}
+					</div>
+				</div>
+				<!-- END SIDEBAR USER TITLE -->
+				<!-- SIDEBAR BUTTONS -->
+				<div class="profile-userbuttons">
+					
+					<button type="submit" class="btn btn-success btn-sm glyphicon glyphicon-open submit"><a href="/upload_meme">Upload Meme</a></button>
+					
+					</form>
+				</div>
+				<!-- END SIDEBAR BUTTONS -->
+				<!-- SIDEBAR MENU -->
+				<div class="profile-usermenu">
+					<ul class="nav">
+						<li class="active">
+							<a href="#">
+							<i class="glyphicon glyphicon-home"></i>
+							My Account </a>
+						</li>
+						<li>
+							<a href="/edit">
+							<i class="glyphicon glyphicon-user"></i>
+							Account Settings </a>
+						</li>
+						
+					                        <li>
+							<a href="/logout">
+							<i class="glyphicon glyphicon-log-out"></i>
+							Sign Out </a>
+						</li>
+					</ul>
+				</div>
+				<!-- END MENU -->
+			</div>
+		</div>
+		<div class="col-md-9">
+            <div class="profile-content">
+			 <center> <h2> Total Memes Uploaded Till Date....</h2></center>
+				<h1>Gallery</h1>
+				{{#each files}}
+				<img src="{{this}}" alt="Image" height="200">
+				{{/each}}
+
+            </div>
+		</div>
+	</div>
+</div>
+
+<br>
+<br>
+
+</body>
+  
+
+</html>
+

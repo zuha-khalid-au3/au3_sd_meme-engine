@@ -1,0 +1,145 @@
+       <link   rel="stylesheet"  href="myprofile.css">
+       {{!-- <link   rel="stylesheet"  href="edit.js"> --}}
+    <title>Edit Profile Page</title>
+
+
+<body>
+   <div class="container">
+    <h1>Edit Profile</h1>
+  	<hr>
+	<div class="row">
+      <!-- left column -->
+      <div class="col-md-3">
+        <div class="text-center">
+          <img src="//placehold.it/100" class="avatar img-circle" alt="avatar">
+          <h6>Upload a different photo...</h6>
+          
+          <input type="file" class="form-control">
+        </div>
+      </div>
+      
+      <!-- edit form column -->
+      <div class="col-md-9 personal-info">
+        <h3>Personal info:</h3>
+            
+         <form class="form-horizontal" role="form" action="/editDB" method="POST"> 
+          <div class="form-group">
+            <label class="col-lg-3 control-label " for="username">Username: </label> <p>{{data.username}}</p>
+            
+            <div class="col-lg-8">
+              <input class="form-control d-none" type="text" id="username" name="username"value="{{data.username}}">
+                </div>
+          </div>
+          <div class="form-group">
+            <label class="col-lg-3 control-label">Email:</label>
+            <p>{{data.email}}</p>
+            <div class="col-lg-8">
+              <input class="form-control d-none" type="text" name="email" value="{{data.email}}">
+            </div>
+          </div>
+        <div class="form-group">
+            <label class="col-md-3 control-label">Password:</label>
+            <p>{{data.password}}</p>
+            <div class="col-md-8">
+              <input class="form-control d-none" type="password" name="password" value="{{data.password}}">
+            </div>
+          </div>
+           <div class="form-group">
+            <label class="col-md-3 control-label" for="phone">Phone:</label>
+            <p>{{data.phone}}</p>
+            <div class="col-md-8">
+              <input class="form-control d-none" type="text" id="phone" name="phone" value="{{data.phone}}">
+            </div>
+          </div>
+        
+          <div class="form-group">
+            <label class="col-md-3 control-label"></label>
+            <div class="col-md-8">
+              {{!-- <a href="/addD"> --}}
+              {{!-- <button type="button" class="btn btn-primary" type="submit" value="Save Changes"> --}}
+                <a href="/addDB">
+                 <button class="btn btn-primary d-none save" type="submit">Save Changes</button>
+                 </a>
+             
+               <input type="reset" class="btn btn-default d-none cancel" value="Cancel"> 
+            </div>
+          </div>
+        </form>
+      </div>               
+      <button class="btn btn-primary edit"type="button" value="click">Edit
+        </button>
+      </div>
+  </div>
+</div>
+  
+<hr>
+</body>
+  
+
+
+
+
+
+</script>
+
+ <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+   
+    <script>
+       $(document).ready(function(){
+  $('.edit').on('click',function(){
+    //$(".form-control").show();
+$(this).parent().parent().parent().find('input').removeClass('d-none');
+$(this).parent().parent().find('.save').removeClass('d-none');
+$(this).parent().parent().parent().find('p').addClass('d-none');
+$(this).addClass('d-none');
+$(this).parent().find('.cancel').removeClass('d-none');
+    
+})
+       });
+
+ $('.save').on('click',function(){
+    //$(".form-control").show();
+$(this).parent().parent().parent().find('input').addClass('d-none');
+$(this).parent().parent().parent().find('.edit').removeClass('d-none');
+$(this).parent().parent().parent().find('p').removeClass('d-none');
+$(this).addClass('d-none');
+$(this).parent().find('.cancel').addClass('d-none');
+})
+
+ $('.cancel').on('click',function(){
+    //$(".form-control").show();
+$(this).parent().parent().parent().find('input').addClass('d-none');
+$(this).parent().parent().parent().find('.edit').removeClass('d-none');
+$(this).parent().parent().parent().find('p').removeClass('d-none');
+$(this).addClass('d-none');
+$(this).parent().find('.save').removeClass('d-none');
+})
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

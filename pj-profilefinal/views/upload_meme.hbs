@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Meme Generator</title>
+        <link rel="stylesheet" href="meme-generator.css">
+         <link rel="stylesheet" href="form.css">
+    </head>
+    <body> {{!-- <form action="upload" method="POST" enctype="multipart/form-data"></form> --}}
+     		{{!-- <input type="file" name="file_uploaded"> --}}
+        <form class="form-signin bg-white border border-light" id="left">
+         <div class="text-center mb-4">
+                <h1 class="h3 mb-3 font-weight-normal"   id = "heading">Create Meme Here</h1>
+            </div>
+       
+ <div class="form-label-group">
+                <input type="text" id="top-text" name="Top-Text" class="form-control" value="Top-Text" />
+                 </div>
+
+  <div class="form-label-group">
+                <input type="text" id="bottom-text" name="Bottom-Text" class="form-control"value="Bottom-Text" />
+                </div>
+</form>
+
+      <div id="up-show">
+             <input type="file" id="image-input"accept="image/x-png,image/gif,image/jpeg"name="file_uploaded"> 
+            {{!-- <form action="upload" method="POST" enctype="multipart/form-data"></form> --}}
+            <button class="btn btn-lg btn-success"  id ="generate-btn">Show</button>
+        </div>
+        
+        <div class="vl"> </div>
+            <canvas id="meme-canvas">
+            	<!-- Meme will be loaded here -->
+				{{#each files}}
+				<img src="{{this}}" alt="Image" height="200">
+				{{/each}}
+            </canvas>
+             <button class="btn btn-lg btn-success "id ="memeShare" type="submit" href="#">Share Me</button>
+   
+        <script src="meme-generator.js"></script>
+    </body>
+</html>
